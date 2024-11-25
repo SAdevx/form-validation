@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>form validation</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./index.js" defer></script>
+    </head>
+    <body>
+        <form novalidate>
+            <div class="container">
+                <label for="email">Email: </label>
+                <input type="email" id=email required>
+                <span></span>
+            </div>
+            <div class="container">
+                <label for="country">Country: </label>
+                <input type="text" id="country" required>
+                <span></span>
+            </div>
+            <div class="container">
+                <label for="zipcode">ZipCode: </label>
+                <input type="text" id="zipcode" minlength="5" maxlength="5" required>
+                <span></span>
+            </div>
+            <div class="container">
+                <label for="password">Password: </label>
+                <input type="password" minlength="6" id="password" required>
+                <span></span>
+            </div>
+            <div class="container">
+                <label for="confirm-password">Confirm Password: </label>
+                <input type="password" minlength="6" id="confirm-password" required>
+                <span></span>
+            </div>
+            <div class="submit">
+                <button id="submit">submit</button>
+            </div>
+        </form>
+    </body>
+</html>
